@@ -2,14 +2,14 @@
   "name": "calorie-backend",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "buildzip": "node buildZip.js",
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "postbuild": "rm -rf .next/cache",
-    "start": "next start",
-    "lint": "next lint"
-  },
+"scripts": {
+  "buildzip": "node buildZip.js",
+  "dev": "next dev --turbopack",
+  "build": "next build && next export", 
+  "postbuild": "rm -rf .next/cache",
+  "start": "next start",
+  "lint": "next lint"
+},
   "dependencies": {
     "@ant-design/icons": "^6.0.0",
     "@ant-design/nextjs-registry": "^1.0.2",
